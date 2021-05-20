@@ -17,6 +17,7 @@
         android:text="@string/zero"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/point"
         app:layout_constraintTop_toBottomOf="@+id/one" />
 
@@ -29,6 +30,7 @@
         android:text="@string/one"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/two"
         app:layout_constraintTop_toBottomOf="@+id/four" />
 
@@ -41,6 +43,7 @@
         android:text="@string/two"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@+id/three"
         app:layout_constraintTop_toBottomOf="@+id/five" />
 
@@ -53,6 +56,7 @@
         android:text="@string/three"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@+id/minus"
         app:layout_constraintTop_toBottomOf="@+id/six" />
 
@@ -65,6 +69,7 @@
         android:text="@string/four"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/five"
         app:layout_constraintTop_toBottomOf="@+id/seven" />
 
@@ -77,6 +82,7 @@
         android:text="@string/five"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/six"
         app:layout_constraintTop_toBottomOf="@+id/eight" />
 
@@ -89,6 +95,7 @@
         android:text="@string/six"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/plus"
         app:layout_constraintTop_toBottomOf="@+id/nine" />
 
@@ -101,6 +108,7 @@
         android:text="@string/seven"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/eight"
         app:layout_constraintTop_toTopOf="@+id/eight" />
 
@@ -113,6 +121,7 @@
         android:text="@string/eight"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/nine"
         app:layout_constraintTop_toTopOf="@+id/nine" />
 
@@ -125,6 +134,7 @@
         android:text="@string/nine"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/plus"
         app:layout_constraintTop_toTopOf="@+id/plus" />
 
@@ -140,6 +150,7 @@
         android:text="@string/plus"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@+id/multiply"
         app:layout_constraintTop_toTopOf="@+id/multiply" />
 
@@ -152,6 +163,7 @@
         android:text="@string/minus"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@+id/percent"
         app:layout_constraintTop_toBottomOf="@+id/plus" />
 
@@ -164,6 +176,7 @@
         android:text="@string/multiply"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="@+id/third_history"
         app:layout_constraintTop_toBottomOf="@+id/third_history" />
 
@@ -176,6 +189,7 @@
         android:text="@string/divide"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="@+id/multiply"
         app:layout_constraintTop_toBottomOf="@+id/multiply" />
 
@@ -188,6 +202,7 @@
         android:text="@string/percent"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="@+id/divide"
         app:layout_constraintTop_toBottomOf="@+id/divide" />
 
@@ -202,6 +217,7 @@
         android:text="@string/point"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@id/clear"
         app:layout_constraintTop_toBottomOf="@+id/two" />
 
@@ -214,6 +230,7 @@
         android:text="@string/clear"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@+id/equal"
         app:layout_constraintTop_toBottomOf="@+id/three" />
 
@@ -226,6 +243,7 @@
         android:text="@string/equal"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="@id/percent"
         app:layout_constraintTop_toBottomOf="@+id/percent" />
 
@@ -238,9 +256,11 @@
         android:scaleType="centerCrop"
         android:src="@drawable/ic_context_menu"
         android:tint="@color/white"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/math_operation"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <!-- Result Views -->
 
@@ -257,7 +277,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
 
     <TextView
         android:id="@+id/result"
@@ -270,7 +291,8 @@
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/math_operation"
-        app:layout_constraintTop_toBottomOf="@id/math_operation" />
+        app:layout_constraintTop_toBottomOf="@id/math_operation"
+        tools:targetApi="o" />
 
     <TextView
         android:id="@+id/first_history"

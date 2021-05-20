@@ -1,60 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_margin="10dp"
-    android:background="#3f5c7b">
-
-    <TextView
-        android:id="@+id/first_value_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="233"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        android:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="@+id/operator_result"
-        app:layout_constraintEnd_toStartOf="@+id/operator_result"
-        app:layout_constraintTop_toTopOf="@+id/operator_result" />
-
-    <TextView
-        android:id="@+id/operator_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="+"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="@+id/second_value_result"
-        app:layout_constraintEnd_toStartOf="@+id/second_value_result"
-        app:layout_constraintTop_toTopOf="@+id/second_value_result" />
-
-    <TextView
-        android:id="@+id/second_value_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="2"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        android:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="@+id/resultado"
-        app:layout_constraintEnd_toStartOf="@+id/resultado"
-        app:layout_constraintTop_toTopOf="@+id/resultado" />
+    android:background="@drawable/item_background">
 
     <TextView
         android:id="@+id/resultado"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="= 4"
-        android:textColor="@color/yellow"
-        android:textSize="30sp"
-        android:autoSizeTextType="uniform"
+        android:layout_margin="3dp"
+        android:text="@string/data_example"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

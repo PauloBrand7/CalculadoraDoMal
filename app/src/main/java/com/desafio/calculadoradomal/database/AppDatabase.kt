@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.desafio.calculadoradomal.database.dao.ResultDAO
-import com.desafio.calculadoradomal.database.entity.ResultObject
+import com.desafio.calculadoradomal.model.ResultObject
 
 @Database(entities = [ResultObject ::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
