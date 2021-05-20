@@ -11,6 +11,6 @@
         android:id="@+id/results_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layoutManager="LinearLayoutManager"
         tools:listitem="@layout/result_item"/>
 </RelativeLayout>
