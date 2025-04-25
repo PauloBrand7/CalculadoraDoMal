@@ -1,4 +1,4 @@
-# Calculadora do Mal
+# Calculadora
 
 Aplicativo de calculadora realizado como desafio proposto durante o periodo de estagio na Invillia. 
 Desenvolvido por Paulo brand.
